@@ -10,8 +10,11 @@ const displayBingoNumbers = function(){
         bingonumbersnode.appendChild(newNumNode)
     }
 }
+let arrayOfNums = []
 const numberGenerator = function(){
     let num = Math.floor(Math.random()* 76 + 1)
+    arrayOfNums.push(num)
+    console.log(arrayOfNums)
     return num
 }
 const selectNum = function(eventData) {
